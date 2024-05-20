@@ -34,6 +34,28 @@ p {
   flex-direction: column;
   border-radius: 1.5vh;
 
+  h2 {
+    font-family: "Young Serif";
+    color: $nutmeg;
+    margin-bottom: 2%;
+  }
+
+  ul,
+  ol {
+    padding-left: 3%;
+
+    li {
+      margin-bottom: 2%;
+      padding-left: 2%;
+    }
+  }
+
+  li::marker {
+    color: $nutmeg;
+    font-family: "Outfit";
+    font-weight: bold;
+  }
+
   .title-card {
     padding: 3%;
 
@@ -57,19 +79,17 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
 
-    h2 {
+    h3 {
       font-family: "Outfit";
       color: $darkRaspberry;
       margin-bottom: 2%;
     }
+  }
 
-    ul {
-      padding-left: 3%;
-
-      li {
-        margin-bottom: 2%;
-      }
-    }
+  .ingredient-card,
+  .instructions-card {
+    margin: 0 3% 3% 3%;
+    border-bottom: 1px solid $lightGrey;
   }
 }
 
