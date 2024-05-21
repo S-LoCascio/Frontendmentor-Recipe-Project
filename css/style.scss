@@ -91,12 +91,46 @@ p {
     margin: 0 3% 3% 3%;
     border-bottom: 1px solid $lightGrey;
   }
+
+  .nutrition-card {
+    padding: 0 3% 3%;
+
+    .nutri-text {
+      padding-bottom: 3%;
+    }
+
+    .nutri-table {
+      display: grid;
+
+      .nutri-info {
+        display: grid;
+        grid-template-columns: 3% 47% 50%;
+        border-bottom: 1px solid $lightGrey;
+        margin-bottom: 2%;
+        padding-bottom: 1%;
+
+        p {
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+
+        .nutri-number {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          font-weight: bold;
+          color: $nutmeg;
+        }
+      }
+    }
+  }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: $wengeBrown;
+  color: $eggshell;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: yellow;
 }
